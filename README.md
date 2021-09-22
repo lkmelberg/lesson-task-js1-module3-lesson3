@@ -23,7 +23,7 @@ Convert the below code to use the then/catch syntax instead.
 ```js
 async function getCatFacts() {
   try {
-    const response = await fetch("https://cat-fact.herokuapp.com/facts");
+    const response = await fetch("https://noroff.herokuapp.com/v1/cat-facts/facts");
     const results = await response.json();
     console.log(results.length);
   } catch (error) {
