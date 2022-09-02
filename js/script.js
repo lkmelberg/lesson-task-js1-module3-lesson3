@@ -61,7 +61,19 @@ const add = (a, b) => a + b;
 
 // Convert the below code to use the then/catch syntax instead.
 
-const url = "https://noroff.herokuapp.com/v1/cat-facts/facts";
+// const url = "https://noroff.herokuapp.com/v1/cat-facts/facts";
+
+// async function getCatFacts() {
+//   try {
+//     const response = await fetch(
+//       "https://noroff.herokuapp.com/v1/cat-facts/facts"
+//     );
+//     const results = await response.json();
+//     console.log(results.length);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
 
 // fetch(url)
 //   .then(function (response) {
@@ -77,29 +89,15 @@ const url = "https://noroff.herokuapp.com/v1/cat-facts/facts";
 
 // or
 
-fetch(url)
-  .then((response) => response.json())
-  .then((data) => console.log(data.length))
-  .catch((error) => console.log(error));
+// fetch(url)
+//   .then((response) => response.json())
+//   .then((data) => console.log(data.length))
+//   .catch((error) => console.log(error));
 
-// async function getCatFacts() {
-//   try {
-//     const response = await fetch(
-//       "https://noroff.herokuapp.com/v1/cat-facts/facts"
-//     );
-//     const results = await response.json();
-//     console.log(results.length);
-//   } catch (error) {
-//     console.log(error);
-//   }
-// }
-
-// enclosed in a function
-function gettCat {
-
-
-fetch("https://noroff.herokuapp.com/v1/cat-facts/facts")
-  .then((response) => response.json())
-  .then((data) => console.log(data.length))
-  .catch((error) => console.log(error));
+// or enclosed in a function
+function gettCat() {
+  fetch("https://noroff.herokuapp.com/v1/cat-facts/facts")
+    .then((response) => response.json())
+    .then((data) => console.log(data.length))
+    .catch((error) => console.log(error));
 }
